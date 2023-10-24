@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/imagem/Background.png");
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    border-radius: 12px;
+    background: #24343D;
+    box-shadow: 0px 10px 15px rgba(36, 52, 41, 0.60) ;
+    color: #FFF;
+}
+.busca #searchInput:hover {
+    background: #324550;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background: #24343D;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+.busca button:hover {
+    background: #324550;
+}
+
+.resultado {
+    padding: 20px;
+    width: 480px;
+    height: 480px;
+    display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url("/imagem/Temperature\ Now\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(36, 52, 41, 0.60) ;
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #fdf8f8;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 10px;
+    font-weight: normal;
+}
+span {
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 2px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+@media (min-width:390px) and (max-width:550px) {
+    .resultado {
+        padding-top: 50px;
+        padding-left: 10px;
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+    }
+}
+@media (min-width:300px) and (max-width:410px) {
+    .resultado {
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
+    h1{
+        font-size: 17px;
+    }
+    .titulo {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .busca {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tempInfo,
+    .ventoInfo {
+    font-size: 20px;
+    }
+    .button{
+        margin-top: 10px;
+    }
+}
