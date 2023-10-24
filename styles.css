@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/imagem/Background.png");
+    background-image: url("../imagem/Background.png");
     background-position: center;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ h1 {
     display: none;
     margin-top: 20px;
     border-radius: 10px;
-    background-image: url("/imagem/Temperature\ Now\ \(1\).png");
+    background-image: url("../imagem/Temperature\ Now\ \(1\).png");
     background-position: center;
     background-size: cover;
     box-shadow: 0px 10px 15px rgba(36, 52, 41, 0.60) ;
